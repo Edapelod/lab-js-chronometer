@@ -26,7 +26,11 @@ class Chronometer {
   }
 
   computeTwoDigitNumber(value) {
-    // ... your code goes here
+    
+    const minsAndSecs = value.toString()
+    if (minsAndSecs.length > 1) {
+      return `${value}`
+    } else {return `0${value}`}
   }
 
   stop() {
