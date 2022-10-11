@@ -38,7 +38,9 @@ class Chronometer {
   }
 
   reset() {
-    // ... your code goes here
+    if (this.currentTime) {
+      return this.currentTime=0
+    }
   }
 
   split() {
